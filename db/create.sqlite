@@ -1,0 +1,8 @@
+CREATE TABLE people (
+  id INTEGER PRIMARY KEY,
+  type TEXT CHECK (type IN ('actor', 'director', 'music director', 'singer', 'cinematographer', 'editor')),
+  name TEXT,
+  url TEXT
+);
+
+DELETE FROM people WHERE 1
